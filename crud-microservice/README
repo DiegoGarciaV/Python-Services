@@ -1,0 +1,53 @@
+Python CRUD Microservice
+
+    This proyect contains a microservice developed using:
+    * Python as Back End languaje, 
+    * Flask module to set the service and endpoints
+    * H2 Database
+    * MySQL Database (The credentials must set in 'mysql.py' and the data source must meet certain requirements)
+
+    If there is any module that is not installed, please ensure to install it using the following commands:
+
+        * Flask:            pip install flask
+        * Sqlalchemy:       pip install flask_sqlalchemy
+        * Mysqldb:          pip install flask_mysqldb
+
+    To run this service, navigate to the proyect root directory and run the following command:
+
+        * python main.py
+
+    After running the last command, the service will run and be ready to serve requests. The CRUD operations
+    are abailable on the following endpoints:
+
+    H2 database: 
+
+        * CREATE:           POST        localhost:8008/api/h2/users/
+        * READ (All):       GET         localhost:8008/api/h2/users/
+        * READ (By Id):     GET         localhost:8008/api/h2/users/<id>
+        * UPDATE:           PUT         localhost:8008/api/h2/users/<id>
+        * DELETE:           DELETE      localhost:8008/api/h2/users/<id>
+
+    MySQL database: 
+
+        * CREATE:           POST        localhost:8008/api/users/
+        * READ (All):       GET         localhost:8008/api/users/
+        * READ (By Id):     GET         localhost:8008/api/users/<id>
+        * UPDATE:           PUT         localhost:8008/api/users/<id>
+        * DELETE:           DELETE      localhost:8008/api/users/<id>
+
+    To use the MySQL service, it is essential to have MySQL installed, a database called 'usuarioscrud' 
+    and a table called 'usuarios' with the following structure:
+
+    +----------+-------------+------+-----+---------+----------------+
+    | Field    | Type        | Null | Key | Default | Extra          |
+    +----------+-------------+------+-----+---------+----------------+
+    | id       | int(11)     | NO   | PRI | NULL    | auto_increment |
+    | nombre   | varchar(30) | NO   |     | ''      |                |
+    | edad     | int(11)     | NO   |     | 15      |                |
+    | locacion | varchar(40) | NO   |     | ''      |                |
+    +----------+-------------+------+-----+---------+----------------+
+
+    To use the web view of the CRUD service (this page is set to show the H2 database information)
+    just follow the next URL: http://localhost:8008/ 
+    The web view contains a table that show all the users stored in the database as well as controlls
+    to do all the CRUD operations.

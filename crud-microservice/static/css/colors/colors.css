@@ -1,0 +1,74 @@
+/* .color-1
+{
+    background-color:  rgb(36, 11, 54);
+}
+
+.color-2
+{
+    background-color:  rgb(255,255,255);
+}
+
+.color-3
+{
+    background-color:  rgb(92, 128, 188);
+}
+
+.color-4
+{
+    background-color:  rgb(215, 36, 131);
+}
+
+.color-5
+{
+    background-color:  rgb(127, 44, 203);
+}
+
+:root {
+    --color-1:  rgb(36, 11, 54);
+
+    --color-2:  rgb(255,255,255);
+
+    --color-3:  rgb(92, 128, 188);
+
+    --color-4:  rgb(215, 36, 131);
+
+    --color-5:  rgb(127, 44, 203);
+} */
+
+.color-1
+{
+    background-color:  rgb(3, 216, 170);
+}
+
+.color-2
+{
+    background-color:  rgb(253, 255, 226);
+}
+
+.color-3
+{
+    background-color:  rgb(25, 228, 235);
+}
+
+.color-4
+{
+    background-color:  rgb(224, 33, 177);
+}
+
+.color-5
+{
+    background-color:  rgb(127, 44, 203);
+}
+
+:root {
+    --color-1:  rgb(0, 255, 200);
+
+    --color-2:  rgb(255, 255, 255);
+
+    --color-3:  rgb(0, 0, 0);
+
+    --color-4:  rgb(224, 33, 177);
+
+    --color-5:  rgb(127, 44, 203);
+}
+
